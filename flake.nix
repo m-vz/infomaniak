@@ -20,6 +20,7 @@
           buildInputs = [
             rust-bin.stable.latest.default
             pkg-config
+            cargo-nextest
             openssl
           ];
           LD_LIBRARY_PATH = lib.makeLibraryPath buildInputs;
