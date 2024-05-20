@@ -1,5 +1,5 @@
 {
-  description = "infomaniak-api";
+  description = "infomaniak";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -16,7 +16,7 @@
       with pkgs;
       {
         devShells.default = mkShell rec {
-          NIX_SHELL_MESSAGE = "infomaniak-api";
+          NIX_SHELL_MESSAGE = "infomaniak";
           buildInputs = [
             rust-bin.stable.latest.default
           ];

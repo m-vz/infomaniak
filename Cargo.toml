@@ -1,5 +1,5 @@
 [package]
-name = "infomaniak-api"
+name = "infomaniak"
 version = "0.1.0"
 authors = ["milan <milan@milan.wtf>"]
 edition = "2021"
