@@ -19,6 +19,8 @@
           NIX_SHELL_MESSAGE = "infomaniak";
           buildInputs = [
             rust-bin.stable.latest.default
+            pkg-config
+            openssl
           ];
           LD_LIBRARY_PATH = lib.makeLibraryPath buildInputs;
           RUST_SRC_PATH = "${rust.packages.stable.rustPlatform.rustLibSrc}";
